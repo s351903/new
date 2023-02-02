@@ -1,0 +1,218 @@
+:root{
+    --lightGrey: #F6F6F3;
+    --hovedbla: #005AA4;
+    --royalbla: #002776;
+    --lysgronn: #E1F4E3;
+    --lysbla: #DFF1F9;
+    --sand: #F8F5EB;
+    --omgul: #ffd500;
+    --koksgra: #1C1C1C;
+    --gra: #292929;
+    --dark: #111820;
+    --yellow: #f3aa4e;
+    --borderbla: #0071cd;
+    --darkbla: #052b79;
+}
+
+html {
+    height: 100%;
+}
+body {
+    background-color: var(--lightGreys);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    padding-bottom: 150px;
+}
+
+.headerContainer {
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: var(--hovedbla);
+}
+
+.logos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+}
+
+.logos svg {
+    margin: 0 10px;
+}
+
+.documentsContainer {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.headerText {
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+.documentBox {
+    box-shadow: 0 1px 4px 0 rgba(38, 38, 38, 0.3);
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(38, 38, 38, 0.3);
+    box-shadow: 0 1px 4px 0 rgba(38, 38, 38, 0.3);
+    display: block;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    -webkit-transition: border-color 0.2s;
+    -o-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 24px;
+    color: var(--darkbla);
+    text-align: center;
+    height: 40px;
+    line-height: 2.5;
+    margin: 20px;
+    width: 250px;
+}
+
+.documentBox i {
+    margin: 0;
+    font-size: 1.8em;
+    margin-right: 10px;
+    float: right;
+    line-height: 1.25;
+}
+
+.documentBox h4 {
+    margin: 0;
+    float: left;
+}
+
+.documentBox:hover {
+    transition-duration: 0.5s;
+    border-color: #052b79;
+}
+
+.disabledHover {
+    cursor: not-allowed;
+}
+
+#sb1-logo {
+    width: 200px;
+}
+
+.oslomet-logo {
+    width: 60px;
+}
+
+#oslomet-color {
+    fill: var(--omgul);
+    fill: black;
+    width: 200px;
+}
+
+.profilecardsContainer {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.profileCard {
+    box-shadow: 0 1px 4px 0 rgba(38, 38, 38, 0.3);
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(38, 38, 38, 0.3);
+    box-shadow: 0 1px 4px 0 rgba(38, 38, 38, 0.3);
+    display: block;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    -webkit-transition: border-color 0.2s;
+    -o-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+    outline: none;
+    text-decoration: none;
+    margin: auto;
+    width: 250px;
+}
+
+.profileCard:hover {
+    transition-duration: 0.5s;
+    border-color: #052b79;
+}
+
+.profileCard:hover img {
+    border-radius: 0;
+}
+
+.profileCard h4, .profileCard p {
+    text-align: center;
+    color: var(--darkbla);
+}
+
+.profileCard img {
+    object-fit: cover;
+    object-position: center top;
+    width: 250px;
+    height: 290px;
+    border-radius: 5px 5px 0 0;
+}
+
+#magnus {
+    object-position: center center;
+}
+
+.footer {
+    margin-top: 150px;
+    color: var(--darkbla);
+    width: 100%;
+    min-height: 125px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--hovedbla);
+}
+
+.footer p {
+    padding: 20px;
+}
+
+
+.footer hr {
+    width: 800px;
+    max-width: 80%;
+    fill: var(--hovedbla);
+}
+
+@media only screen and (max-width: 683px) {
+     .profilecardsContainer {
+        display: block;
+    }
+    .profileCard {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 821px) {
+    .profilecardsContainer {
+        max-width: 800px;
+    }
+
+    .profileCard {
+        width: 200px;
+    }
+    .profileCard img {
+        width: 200px;
+        height: 250px;
+    }
+}
